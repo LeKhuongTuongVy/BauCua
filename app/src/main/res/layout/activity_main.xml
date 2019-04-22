@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/backgroundframe">
+
+
+
+    <FrameLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/backgroundframe">
+
+
+        <TextView
+            android:id="@+id/tvTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="400"
+            android:layout_marginLeft="45dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/backgroundview"/>
+
+    </FrameLayout>
+        <ImageView
+            android:id="@+id/phinh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/phinh"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/gvBanCo"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:numColumns="3"
+            android:verticalSpacing="20dp">
+
+        </GridView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        
+        <ImageView
+            android:id="@+id/xingau1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/hinhdongxingau"/>
+
+        <ImageView
+            android:id="@+id/xingau2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:src="@drawable/hinhdongxingau"/>
+
+        <ImageView
+            android:id="@+id/xingau3"
+            android:layout_width="50dp"
+
+            android:layout_height="50dp"
+            android:src="@drawable/hinhdongxingau"
+            android:onClick="LacXiNgau"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
